@@ -29,10 +29,33 @@ def main():
     # 1. Load Data
     all_files = sorted([f for f in os.listdir(args.img_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp'))])
     
-    # Simple 80/20 Train/Val split
+    # --- METHOD 1: SIMPLE RANDOM SPLIT (Default for minimal example) ---
+    # Good for single-frame-per-embryo datasets.
+    np.random.seed(42)
+    np.random.shuffle(all_files)
+    
     split_idx = int(len(all_files) * 0.8)
     train_files = all_files[:split_idx]
     val_files = all_files[split_idx:]
+
+    # --- METHOD 2: EMBRYO-LEVEL SPLIT (Recommended for multi-frame data) ---
+    # Use this if you have multiple frames per embryo (e.g., E001_1.jpg, E001_2.jpg)
+    # to ensure the same embryo doesn't appear in both Train and Val.
+    """
+    from sklearn.model_selection import GroupShuffleSplit
+    
+    # 1. Parse Embryo IDs from filenames (e.g., "E001_frame1.jpg" -> "E001")
+    # Adjust the parsing logic below to match your filename format
+    embryo_ids = [f.split('_')[0] for f in all_files]
+    
+    gss = GroupShuffleSplit(n_splits=1, train_size=0.8, random_state=42)
+    train_idx, val_idx = next(gss.split(all_files, groups=embryo_ids))
+    
+    train_files = [all_files[i] for i in train_idx]
+    val_files = [all_files[i] for i in val_idx]
+    
+    print(f"Performed Embryo-level split. {len(np.unique(embryo_ids))} unique embryos.")
+    """
 
     print(f"Training on {len(train_files)} images. Validating on {len(val_files)} images.")
 
