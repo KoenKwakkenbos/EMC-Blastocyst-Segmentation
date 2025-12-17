@@ -1,6 +1,8 @@
 # Blastocyst Segmentation Tool
 *Authors: Koen Kwakkenbos, Effrosyni Chavli, Muhammad Arif, Esther Baart, Jifke Veenland (Erasmus MC, Rotterdam, The Netherlands)*
 
+![Blastocyst Segmentation Example](images/Example.png)
+
 ## ✍️ Research
 
 A Deep Learning repository for the segmentation of human blastocysts using a **Residual Dilated U-Net (RD-U-Net)**. This project includes custom data loading, specific loss functions (Weighted BCE + Dice), and morphological post-processing. The development and usage of this model was described in **[Title Paper]**. 
