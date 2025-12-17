@@ -1,4 +1,4 @@
-# Blastocyst Segmentation (RD-U-Net)
+# Blastocyst Segmentation Tool
 *Authors: Koen Kwakkenbos, Effrosyni Chavli, Muhammad Arif, Esther Baart, Jifke Veenland (Erasmus MC, Rotterdam, The Netherlands)*
 
 ## ✍️ Research
@@ -76,9 +76,9 @@ python train.py \\
 
 ## 📊 Pre-trained Models
 
-You can download the pre-trained weights from the [Releases](https://www.google.com/search?q=https://github.com/YourUsername/blastocyst-segmentation/releases) page.
+You can find the pre-trained weights in the [weights](https://www.google.com/search?q=https://github.com/KoenKwakkenbos/emc-blastocyst-segmentation/weights) folder.
 
-* `best_model.h5`: Trained on our in-house dataset, described in the paper.
+* `Blast_segmentation_model.h5`: Trained on our in-house dataset, as described in the paper.
 
 
 ## 📜 License
