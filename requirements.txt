@@ -1,0 +1,9 @@
+tensorflow>=2.10.0
+numpy
+pandas
+scikit-image
+opencv-python
+albumentations
+matplotlib
+pyyaml
+cv2
