@@ -1,12 +1,11 @@
 # Blastocyst Segmentation (RD-U-Net)
+*Authors: Koen Kwakkenbos, Effrosyni Chavli, Muhammad Arif, Esther Baart, Jifke Veenland (Erasmus MC, Rotterdam, The Netherlands)*
 
 ## ✍️ Research
 
-Used to generate the model to measure the cross-sectional area of human blastocysts in **[Title Paper]**
+A Deep Learning repository for the segmentation of human blastocysts using a **Residual Dilated U-Net (RD-U-Net)**. This project includes custom data loading, specific loss functions (Weighted BCE + Dice), and morphological post-processing. The development and usage of this model was described in **[Title Paper]**. 
 
-*Authors: Koen Kwakkenbos, Effrosyni Chavli, Muhammad Arif, Esther Baart, Jifke Veenland (Erasmus MC, Rotterdam, The Netherlands)*
-
-A Deep Learning repository for the segmentation of human blastocysts using a **Residual Dilated U-Net (RD-U-Net)**. This project includes custom data loading, specific loss functions (Weighted BCE + Dice), and morphological post-processing.
+This repository provides a streamlined framework for reproducing the training process and includes an inference script to apply the pre-trained model to your own datasets.
 
 ## 📂 Structure
 ```text
