@@ -76,7 +76,7 @@ python train.py \\
 
 ## 📊 Pre-trained Models
 
-You can find the pre-trained weights in the [weights](https://www.google.com/search?q=https://github.com/KoenKwakkenbos/emc-blastocyst-segmentation/weights) folder.
+You can find the pre-trained weights in the [weights](https://github.com/KoenKwakkenbos/EMC-Blastocyst-Segmentation/tree/main/weights) folder.
 
 * `Blast_segmentation_model.h5`: Trained on our in-house dataset, as described in the paper.
 
