@@ -5,7 +5,7 @@
 
 ## ✍️ Research
 
-A Deep Learning repository for the segmentation of human blastocysts using a **Residual Dilated U-Net (RD-U-Net)**. This project includes custom data loading, specific loss functions (Weighted BCE + Dice), and morphological post-processing. The development and usage of this model was described in **Quantitative blastocyst expansion features derived via deep learning from time-lapse sequences predict clinical outcomes.**. 
+A Deep Learning repository for the segmentation of human blastocysts using a **Residual Dilated U-Net (RD-U-Net)**. This project includes custom data loading, specific loss functions (Weighted BCE + Dice), and morphological post-processing. The development and usage of this model was described in **Quantitative blastocyst expansion features derived via deep learning from time-lapse sequences predict clinical outcomes**. 
 
 This repository provides a streamlined framework for reproducing the training process and includes an inference script to apply the pre-trained model to your own datasets. The pre-trained model was trained on an in-house dataset, using frames from time-lapse images captured using an **EmbryoScope time-lapse incubator (Vitrolife)**.
 
